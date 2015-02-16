@@ -53,12 +53,12 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "GMBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupCap: 200, // 1-200
+        startupVolume: 100, // 0-100
+        startupEmoji: true, // true or false
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
@@ -92,7 +92,7 @@
         motd: "Temporary Message of the Day",
         filterChat: true,
         etaRestriction: false,
-        welcome: true,
+        welcome: false,
         opLink: null,
         rulesLink: null,
         themeLink: null,
@@ -102,7 +102,7 @@
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
-        commandLiteral: "!",
+        commandLiteral: "/",
         blacklists: {
             NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
             OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
